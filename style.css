@@ -1,0 +1,194 @@
+*, *::before, *::after {
+    box-sizing: border-box;    
+}
+
+:root {
+    --main-body-color: #333;
+    --secondary-body-color: rgb(218, 223, 247, 0.5);
+    --whatsapp-color: #25d366;
+    --instagram-color: rgb(238, 44, 88);
+    --facebook-color: rgb(57, 89, 150);
+
+}
+
+.visually-hidden {
+    display: none;
+}
+
+body {
+    margin: 0;
+    color: var(--main-body-color);
+}
+
+header,
+section,
+footer {
+    padding: 0 2rem;
+    margin-top: 2rem;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+header {
+    padding-top: 2rem;
+    margin-top: 0;
+    background-image: url('./assets/hero-background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right 0px top;
+}
+
+h1 {
+    margin-top: 4.5rem;
+}
+
+.call-to-action {
+    text-align: center;
+    background-color: var(--secondary-body-color);
+    padding: 1.5rem;
+}
+
+.call-to-action h2 {
+    margin-top: 0;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--whatsapp-color);
+    padding: 1em;
+    border-radius: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.course-price {
+    margin-bottom: 1em;
+}
+
+img {
+    width: 100%;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (9 divided by 16 gives 0.5625 or 56.25%) */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.achievement {
+    display: grid;
+    row-gap: 0.5rem;
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: 1rem;
+}
+
+.achievement > * {
+    margin: 0;
+}
+
+.achievement img {
+    width: 50px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    justify-self: start;
+    align-self: center;
+}
+
+.achievement p {
+    grid-column-start: 2;
+}
+
+footer {
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-media > a {
+    display: block;
+    text-align: center;
+
+    height: 2rem;
+    width: 2rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    display: block;
+    border-radius: 5px;
+    color: white;
+}
+
+/* .image-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+}
+
+.image-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and fill the container */
+} */
+
+.instagram {
+    background-color: var(--whatsapp-color);
+}
+
+.whatsapp {
+    background-color: var(--instagram-color);
+}
+
+.facebook-f {
+    background-color: var(--facebook-color);
+}
+
+/* Media query for desktop screens START */
+@media screen and (min-width: 768px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 0.2fr;
+    }
+
+    h2 {
+        text-align: center;
+    }
+    .courses {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 1rem;
+    }
+    .achievements {
+        display: grid;
+        grid: "title title title"
+              "achievement achievement achievement"
+              / 1fr 1fr 1fr;
+        column-gap: 1rem;
+    }
+
+    .achievements > h2 {
+        grid-area: title;
+    }
+
+    .achievement {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        border-left: 0.5rem dotted var(--secondary-body-color);
+        padding-left: 0.5rem;
+    }
+}
+/* Media query for desktop screens END */

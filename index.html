@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profesor Daniel</title>
+    <title>Maestro Daniel</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="https://kit.fontawesome.com/ca767f7de3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h1>Помогу изучить испанский, английский или программирование!</h1>
-        <p>Здравствуйте, меня зовут Даня. Я системотехник по образованию, но учитель по призванию.</p>
-        <p>Я изучаю языки с 10 лет, прожил 4 года в Америке и уже год я живу на Тенерифе, в Испании. Я могу помочь вам и вашему ребенку заговорить, изучить грамматику испанского и английского языков, адаптироваться в испанской школе и разобраться с учебными предметами.</p>
-        <p>Также могу обучить основам информатики и языкам программирования С и JavaScript.</p>
+        <div class="introduction">
+            <h1>Помогу изучить испанский, английский или программирование!</h1>
+            <p>Здравствуйте, меня зовут Даня.</p>
+            <!-- <p>Здравствуйте, меня зовут Даня. Я системотехник по образованию, но учитель по призванию.</p> -->
+            <p>Я могу помочь вам и вашему ребенку заговорить, изучить грамматику испанского и английского языков, адаптироваться в испанской школе и разобраться с учебными предметами.</p>
+            <p>Изучаю языки с 10 лет, прожил 4 года в Америке и уже год я живу на Тенерифе, в Испании.</p>
+            <p>Также могу обучить основам информатики и языкам программирования С и JavaScript.</p>
+        </div>
     </header>
     <section class="call-to-action">
         <h2>Первое занятие бесплатно!</h2>
         <p>Первое занятие бесплатно, чтобы мы могли познакомиться, понять ваши потребности и установить цели обучения.</p>
-        <a class="button">Написать в WhatsApp</a>
+        <a class="button" href="https://wa.me/34635952910">Написать в WhatsApp</a>
     </section>
     <section>
         <h2>Курсы</h2>
@@ -25,48 +30,50 @@
             <div class="course">
                 <h3>Разговорный язык</h3>
                 <div class="course-price">15€</div>
-                <img src="" alt="" class="course-image">
+                <div class="image-container"><img src="./assets/speaking-course.png" alt="" class="course-image"></div>
                 <p>Для тех, кто уже знаком с основами грамматики, курс сфокусирован на развитии разговорных навыков, свободном и уверенном выражении мыслей.</p>
             </div>
             <div class="course">
                 <h3>Грамматика</h3>
                 <div class="course-price">15€</div>
-                <img src="" alt="" class="course-image">
+                <div class="image-container"><img src="./assets/grammar-course.png" alt="" class="course-image"></div>
                 <p>Курс для тех, кто хочет углубить знание грамматики. Фокус на ясном и точном применении грамматических правила в письменной и устной речи.</p>
             </div>
             <div class="course">
                 <h3>Школьные предметы</h3>
                 <div class="course-price">20€</div>
-                <img src="" alt="" class="course-image">
+                <div class="image-container"><img src="./assets/school-course.png" alt="" class="course-image"></div>
                 <p>Объясняю сложные концепции, помогаю с выполнением домашних заданий и подготовкой к контрольным работам и экзаменам.</p>
             </div>
             <div class="course">
                 <h3>Программирование</h3>
                 <div class="course-price">35€</div>
-                <img src="" alt="" class="course-image">
+                <div class="image-container"><img src="./assets/programming-course.png" alt="" class="course-image"></div>
                 <p>Ученики ознакомятся с основами компьютерных наук, такими как алгоритмы, структуры данных, языки программирования и многое другое.</p>
             </div>
         </div>
     </section>
-    <section>
+    <section class="visually-hidden">
         <h2>Обо мне</h2>
         <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ante ipsum primis Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ant</p>
-        <video src=""></video>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7vZOuClmaxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </section>
-    <section>
+    <section class="achievements">
          <h2>Достижения</h2>
         <div class="achievement">
-            <img src="" alt="">
+            <img src="./assets/language-certification.png" alt="">
             <h3>Языковые сертификаты</h3>
             <p>Успешно сдал TOEFL и активно готовлюсь к экзамену C1 DELE.</p>
         </div>
         <div class="achievement">
-            <img src="" alt="">
+            <img src="./assets/bachelors-degree.png" alt="">
             <h3>Бакалавр информатики</h3>
             <p>Получил степень бакалавра в области информационных систем в МГСУ.</p>
         </div>
         <div class="achievement">
-            <img src="" alt="">
+            <img src="./assets/teaching-experience.png" alt="">
             <h3>3 года преподавания</h3>
             <p>Знаю, как помочь разговориться и разобраться в грамматике.</p>
         </div>
@@ -77,8 +84,12 @@
         <a class="button">Написать в WhatsApp</a>
     </section>
     <footer>
-        <div class="scoial-media"></div>
-        <p>2023 &copy; Profesor Daniel</p>
+        <div class="social-media">
+            <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="" class="facebook-f"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <p>2023 &copy; Maestro Daniel</p>
     </footer>
 </body>
 </html>
