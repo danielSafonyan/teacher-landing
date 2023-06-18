@@ -142,15 +142,16 @@ footer {
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Maintain aspect ratio and fill the container */
-} */
+  object-fit: cover;
+} 
+*/
 
 .instagram {
-    background-color: var(--whatsapp-color);
+    background-color: var(--instagram-color);
 }
 
 .whatsapp {
-    background-color: var(--instagram-color);
+    background-color: var(--whatsapp-color);
 }
 
 .facebook-f {
